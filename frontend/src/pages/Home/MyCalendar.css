@@ -1,0 +1,55 @@
+/* src/MyCalendar.css */
+.react-calendar {
+    width: 100%;
+    border: none;
+    background: transparent;
+  }
+  
+  .react-calendar__navigation button {
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: default;
+    transition: none;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background: transparent;
+    color: white;
+  }
+  
+  .react-calendar__tile {
+    max-width: initial !important;
+    height: 50px; /* Adjust height to make tiles smaller */
+    width: 50px; /* Ensure width matches height for square tiles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%; /* Full round */
+    transition: background-color 0.3s ease;
+  }
+  
+  .react-calendar__tile--active {
+    background: #34d399; /* Light green for selected date */
+    color: white;
+  }
+  
+  .react-calendar__tile--now {
+    background: #064e3b; /* Deep green for current date */
+    color: white;
+  }
+  
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #6b7280; /* Gray for days of neighboring months */
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #d1fae5; /* Light green on hover */
+  }
+  
+  .dark .react-calendar__tile:hover {
+    background-color: #065f46; /* Dark green on hover */
+  }
